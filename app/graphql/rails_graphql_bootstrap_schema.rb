@@ -1,4 +1,4 @@
-class RailsGraphqlBootstrapSchema < GraphQL::Schema
+class CodeReviewManagerSchema < GraphQL::Schema
   mutation(Types::MutationType)
   query(Types::QueryType)
 end
