@@ -87,4 +87,4 @@ production:
   <<: *default
   database: code-review-manager_production
   # username: code-review-manager
-  # password: <%= ENV['RAILS_GRAPHQL_BOOTSTRAP_DATABASE_PASSWORD'] %>
+  # password: <%= ENV['CODE_REVIEW_MANAGER_DATABASE_PASSWORD'] %>
