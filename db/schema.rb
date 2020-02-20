@@ -21,4 +21,14 @@ ActiveRecord::Schema.define(version: 2020_02_20_173833) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "contributors", force: :cascade do |t|
+    t.string "name", null: false
+    t.integer "workload", null: false
+    t.integer "country", default: 0, null: false
+    t.date "admission_date", null: false
+    t.integer "contributor_type", default: 0, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
 end
