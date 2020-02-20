@@ -11,17 +11,6 @@ describe Contributor do
   it { is_expected.to validate_presence_of(:admission_date) }
   it { is_expected.to validate_presence_of(:contributor_type) }
 
-  context 'with invalid workload' do
-    subject(:contributor) { build(:contributor, workload: 32) }
-
-    it { is_expected.to be_invalid }
-
-    it 'returns invalid workload error' do
-      contributor.valid?
-      expect(contributor.errors.messages.keys).to include(:invalid_workload)
-    end
-  end
-
   context 'with future date' do
     subject(:contributor) { build(:contributor, admission_date: 3.days.from_now.to_date) }
 
