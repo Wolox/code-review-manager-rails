@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :technology do
-    name { 'Technology' }
+    name { Faker::ProgrammingLanguage.name }
   end
 end

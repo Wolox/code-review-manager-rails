@@ -1,5 +1,16 @@
 require 'rails_helper'
 
 RSpec.describe Technology, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context 'when a valid technology is built' do
+    subject(:technology) { build(:technology) }
+
+    it { is_expected.to be_valid }
+    it { is_expected.to validate_presence_of(:name) }
+  end
+
+  context 'when a valid technology is created' do
+    subject(:technology) { create(:technology) }
+
+    it { is_expected.to be_persisted }
+  end
 end
