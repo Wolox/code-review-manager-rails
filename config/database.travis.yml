@@ -1,0 +1,6 @@
+test: &test
+  adapter: postgresql
+  encoding: unicode
+  database: code-review-manager_test
+  username: code-review-manager
+  password: code-review-manager
