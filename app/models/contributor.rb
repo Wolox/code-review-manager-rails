@@ -1,6 +1,6 @@
 class Contributor < ApplicationRecord
   enum workload: { '20': 0, '25': 1, '30': 2, '40': 3 }
-  enum contributor_type: { contributor: 0, admin: 1 }
+  enum contributor_type: { standard: 0, admin: 1 }
   enum country: { argentina: 0, chile: 1, colombia: 2 }
   validates :name, :country, :workload, :admission_date, :contributor_type, presence: true
   validate :admission_date_until_today
