@@ -15,9 +15,6 @@ ActiveRecord::Schema.define(version: 2020_03_10_170729) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "projects", force: :cascade do |t|
-    t.string "name", null: false
-
   create_table "contributors", force: :cascade do |t|
     t.string "name", null: false
     t.integer "workload", null: false
@@ -26,14 +23,20 @@ ActiveRecord::Schema.define(version: 2020_03_10_170729) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
-  
+
+  create_table "projects", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "projects_technologies", force: :cascade do |t|
     t.bigint "project_id"
     t.bigint "technology_id"
     t.index ["project_id"], name: "index_projects_technologies_on_project_id"
     t.index ["technology_id"], name: "index_projects_technologies_on_technology_id"
   end
-  
+
   create_table "technologies", force: :cascade do |t|
     t.string "name", null: false
     t.datetime "created_at", precision: 6, null: false
