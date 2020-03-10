@@ -1,4 +1,5 @@
 require 'simplecov'
+
 SimpleCov.start 'rails'
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
@@ -83,3 +84,4 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
+
