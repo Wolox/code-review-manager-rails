@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-describe Technology, type: :model do
-  subject(:technology) { build(:technology) }
+describe Proyect, type: :model do
+  subject(:proyect) { build(:proyect) }
 
   describe 'associations' do
-    it { is_expected.to have_and_belong_to_many(:proyects) }
+    it { is_expected.to have_and_belong_to_many(:technologies) }
   end
 
   describe 'validations' do
