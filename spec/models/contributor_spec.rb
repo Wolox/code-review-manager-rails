@@ -9,7 +9,6 @@ describe Contributor do
   it { is_expected.to validate_presence_of(:workload) }
   it { is_expected.to validate_presence_of(:country) }
   it { is_expected.to validate_presence_of(:admission_date) }
-  it { is_expected.to validate_presence_of(:contributor_type) }
 
   context 'with future date' do
     subject(:contributor) { build(:contributor, admission_date: 3.days.from_now.to_date) }
