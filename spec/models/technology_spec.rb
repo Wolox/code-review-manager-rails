@@ -4,7 +4,7 @@ describe Technology, type: :model do
   subject(:technology) { build(:technology) }
 
   describe 'associations' do
-    it { is_expected.to have_and_belong_to_many(:proyects) }
+    it { is_expected.to have_and_belong_to_many(:projects) }
   end
 
   describe 'validations' do

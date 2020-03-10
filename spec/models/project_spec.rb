@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-describe Proyect, type: :model do
-  subject(:proyect) { build(:proyect) }
+describe Project, type: :model do
+  subject(:project) { build(:project) }
 
   describe 'associations' do
     it { is_expected.to have_and_belong_to_many(:technologies) }

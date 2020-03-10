@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :proyect do
+  factory :project do
     name { Faker::Science.element }
   end
 end
