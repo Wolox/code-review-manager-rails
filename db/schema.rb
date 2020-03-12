@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_10_170729) do
+ActiveRecord::Schema.define(version: 2020_03_12_192536) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,19 @@ ActiveRecord::Schema.define(version: 2020_03_10_170729) do
     t.integer "workload", null: false
     t.integer "country", default: 0, null: false
     t.date "admission_date", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "job_assignations", force: :cascade do |t|
+    t.bigint "role_id", null: false
+    t.bigint "contributor_id", null: false
+    t.index ["contributor_id"], name: "index_job_assignations_on_contributor_id"
+    t.index ["role_id"], name: "index_job_assignations_on_role_id"
+  end
+
+  create_table "roles", force: :cascade do |t|
+    t.integer "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
