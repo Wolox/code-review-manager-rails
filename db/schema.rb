@@ -23,7 +23,20 @@ ActiveRecord::Schema.define(version: 2020_03_12_192536) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
+  
+  create_table "projects", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
+  create_table "projects_technologies", force: :cascade do |t|
+    t.bigint "project_id"
+    t.bigint "technology_id"
+    t.index ["project_id"], name: "index_projects_technologies_on_project_id"
+    t.index ["technology_id"], name: "index_projects_technologies_on_technology_id"
+  end
+  
   create_table "job_assignations", force: :cascade do |t|
     t.bigint "role_id", null: false
     t.bigint "contributor_id", null: false
