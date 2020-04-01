@@ -34,8 +34,6 @@ gem 'sidekiq-failures'
 gem 'rails-i18n', '~> 6.0.0'
 gem 'pundit'
 
-gem 'versionist', '~> 2.0.0'
-
 # Pagination
 gem 'wor-paginate', '~> 0.1.10'
 

@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   mount Sidekiq::Web => '/sidekiq'
 
-  api_version(module: 'api/v1', path: { value: 'api/v1' }, defaults: { format: :json }) do
+  scope module: 'api/v1', path: 'api/v1' do
     resources :projects, only: %i[index]
   end
 end
