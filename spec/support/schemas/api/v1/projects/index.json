@@ -17,5 +17,6 @@
     "current_page": { "type": "integer" },
     "next_page": { "type": "integer, null" },
     "previous_page": { "type": "string, null" }
+    
   }
 }
