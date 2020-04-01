@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "properties": {
+    "page": {
+      "type": "array, null",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "name": { "type": "string" },
+          "potential_cases": { "type": "integer" },
+          "treatable_cases": { "type": "integer, null" },
+          "description": { "type": "string, null" },
+          "incidence": { "type": "string, null" },
+          "prevalence": { "type": "string, null" }
+        }
+      }
+    },
+    "count": { "type": "integer" },
+    "total_pages": { "type": "integer" },
+    "total_count": { "type": "integer" },
+    "current_page": { "type": "integer" },
+    "next_page": { "type": "integer, null" },
+    "previous_page": { "type": "string, null" }
+  }
+}
