@@ -7,12 +7,7 @@
         "type": "object",
         "properties": {
           "id": { "type": "integer" },
-          "name": { "type": "string" },
-          "potential_cases": { "type": "integer" },
-          "treatable_cases": { "type": "integer, null" },
-          "description": { "type": "string, null" },
-          "incidence": { "type": "string, null" },
-          "prevalence": { "type": "string, null" }
+          "name": { "type": "string" }
         }
       }
     },

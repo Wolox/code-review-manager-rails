@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 describe Api::V1::ProjectsController do
   describe action '#index' do
     subject(:index_request) { get :index }
@@ -5,6 +7,7 @@ describe Api::V1::ProjectsController do
       default_example
 
       before do
+        build_stubbed_list(:project, 5)
         index_request
       end
       

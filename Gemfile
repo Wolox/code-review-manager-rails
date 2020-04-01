@@ -36,6 +36,9 @@ gem 'pundit'
 
 gem 'versionist', '~> 2.0.0'
 
+# Pagination
+gem 'wor-paginate', '~> 0.1.10'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -61,12 +64,14 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 
   gem 'bullet'
+  gem 'fictium', '~> 0.4.1'
 end
 
 group :test do
   gem 'shoulda-matchers'
   gem 'database_cleaner'
   gem 'simplecov', require: false
+  gem "json-schema"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

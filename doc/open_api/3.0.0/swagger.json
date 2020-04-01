@@ -1,0 +1,32 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "TODO: Change me at Fictium.configuration.api",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/api/v1/projects": {
+      "description": "",
+      "get": {
+        "tags": [
+
+        ],
+        "description": "List all available projects",
+        "parameters": [
+
+        ],
+        "responses": {
+          "default": {
+            "description": "when calling the endpoint without any params",
+            "content": {
+              "application/json": {
+                "example": "{\"page\":[],\"count\":0,\"total_pages\":0,\"total_count\":0,\"current_page\":1,\"previous_page\":null,\"next_page\":null}"
+              }
+            }
+          }
+        },
+        "deprecated": false
+      }
+    }
+  }
+}
