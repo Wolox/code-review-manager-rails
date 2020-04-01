@@ -8,7 +8,7 @@ describe Api::V1::ProjectsController do
       default_example
 
       before do
-        build_stubbed_list(:project, 5)
+        create_list(:project, 5)
         index_request
       end
 
