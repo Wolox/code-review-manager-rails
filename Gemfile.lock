@@ -99,6 +99,10 @@ GEM
     faker (2.11.0)
       i18n (>= 1.6, < 2)
     ffi (1.12.2)
+    fictium (0.4.1)
+      activesupport (>= 5.1, < 6.2)
+      json-schema (~> 2.8)
+      verbs (~> 2.1.4)
     flay (2.12.1)
       erubis (~> 2.7.0)
       path_expander (~> 1.0)
@@ -115,6 +119,8 @@ GEM
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
     jaro_winkler (1.5.4)
+    json-schema (2.8.1)
+      addressable (>= 2.4)
     kwalify (0.7.2)
     launchy (2.4.3)
       addressable (~> 2.3)
@@ -217,14 +223,14 @@ GEM
       rspec-mocks (~> 3.9)
       rspec-support (~> 3.9)
     rspec-support (3.9.2)
-    rubocop (0.80.1)
+    rubocop (0.81.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.7.0.1)
       rainbow (>= 2.2.2, < 4.0)
       rexml
       ruby-progressbar (~> 1.7)
-      unicode-display_width (>= 1.4.0, < 1.7)
+      unicode-display_width (>= 1.4.0, < 2.0)
     rubocop-rails (2.5.0)
       activesupport
       rack (>= 1.1)
@@ -277,8 +283,11 @@ GEM
     tty-which (0.4.2)
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
-    unicode-display_width (1.6.1)
+    unicode-display_width (1.7.0)
     uniform_notifier (1.13.0)
+    verbs (2.1.4)
+      activesupport (>= 2.3.4)
+      i18n
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -291,6 +300,9 @@ GEM
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
+    wor-paginate (0.1.10)
+      rails (>= 4.0)
+      railties (>= 4.1.0)
     zeitwerk (2.3.0)
 
 PLATFORMS
@@ -305,6 +317,8 @@ DEPENDENCIES
   database_cleaner
   factory_bot_rails
   faker
+  fictium (~> 0.4.1)
+  json-schema
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 3.12.4)
@@ -327,9 +341,10 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
   webmock
+  wor-paginate (~> 0.1.10)
 
 RUBY VERSION
-   ruby 2.6.5p114
+   ruby 2.6.6p146
 
 BUNDLED WITH
-   2.1.4
+   1.17.2
