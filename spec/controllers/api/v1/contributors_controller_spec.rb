@@ -21,6 +21,10 @@ describe Api::V1::ContributorsController do
       it 'responses with 200' do
         expect(response).to have_http_status(:ok)
       end
+
+      it 'matchs the projects index schema' do
+        expect(response).to match_response_schema('contributors/index')
+      end
     end
 
     context 'when there are no results' do

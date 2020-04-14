@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.5'
+ruby '2.6.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
@@ -33,8 +33,10 @@ gem 'sidekiq'
 gem 'sidekiq-failures'
 gem 'rails-i18n', '~> 6.0.0'
 gem 'pundit'
-gem 'wor-paginate'
 gem 'active_model_serializers', '~> 0.10.0'
+
+# Pagination
+gem 'wor-paginate', '~> 0.1.10'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -61,12 +63,14 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 
   gem 'bullet'
+  gem 'fictium', '~> 0.4.1'
 end
 
 group :test do
   gem 'shoulda-matchers'
   gem 'database_cleaner'
   gem 'simplecov', require: false
+  gem "json-schema"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
