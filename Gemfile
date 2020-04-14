@@ -33,6 +33,7 @@ gem 'sidekiq'
 gem 'sidekiq-failures'
 gem 'rails-i18n', '~> 6.0.0'
 gem 'pundit'
+gem 'active_model_serializers', '~> 0.10.0'
 
 # Pagination
 gem 'wor-paginate', '~> 0.1.10'

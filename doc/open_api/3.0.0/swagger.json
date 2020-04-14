@@ -20,7 +20,7 @@
             "description": "when calling the endpoint without any params",
             "content": {
               "application/json": {
-                "example": "{\"page\":[{\"id\":11,\"name\":\"Flerovium\",\"created_at\":\"2020-04-01T14:04:59.438Z\",\"updated_at\":\"2020-04-01T14:04:59.438Z\"},{\"id\":12,\"name\":\"Lutetium\",\"created_at\":\"2020-04-01T14:04:59.440Z\",\"updated_at\":\"2020-04-01T14:04:59.440Z\"},{\"id\":13,\"name\":\"Technetium\",\"created_at\":\"2020-04-01T14:04:59.441Z\",\"updated_at\":\"2020-04-01T14:04:59.441Z\"},{\"id\":14,\"name\":\"Einsteinium\",\"created_at\":\"2020-04-01T14:04:59.443Z\",\"updated_at\":\"2020-04-01T14:04:59.443Z\"},{\"id\":15,\"name\":\"Yttrium\",\"created_at\":\"2020-04-01T14:04:59.444Z\",\"updated_at\":\"2020-04-01T14:04:59.444Z\"}],\"count\":5,\"total_pages\":1,\"total_count\":5,\"current_page\":1,\"previous_page\":null,\"next_page\":null}"
+                "example": "{\"page\":[{\"id\":11,\"name\":\"Dubnium\",\"created_at\":\"2020-04-14T20:34:03.114Z\",\"updated_at\":\"2020-04-14T20:34:03.114Z\"},{\"id\":12,\"name\":\"Actinium\",\"created_at\":\"2020-04-14T20:34:03.117Z\",\"updated_at\":\"2020-04-14T20:34:03.117Z\"},{\"id\":13,\"name\":\"Plutonium\",\"created_at\":\"2020-04-14T20:34:03.119Z\",\"updated_at\":\"2020-04-14T20:34:03.119Z\"},{\"id\":14,\"name\":\"Gold\",\"created_at\":\"2020-04-14T20:34:03.121Z\",\"updated_at\":\"2020-04-14T20:34:03.121Z\"},{\"id\":15,\"name\":\"Carbon\",\"created_at\":\"2020-04-14T20:34:03.123Z\",\"updated_at\":\"2020-04-14T20:34:03.123Z\"}],\"count\":5,\"total_pages\":1,\"total_count\":5,\"current_page\":1,\"previous_page\":null,\"next_page\":null}"
               }
             }
           }
