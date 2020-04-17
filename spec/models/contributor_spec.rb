@@ -4,6 +4,8 @@ describe Contributor do
   subject(:contributor) { build(:contributor) }
 
   it { is_expected.to be_valid }
+  it { is_expected.to define_enum_for(:country).with_values(described_class.countries.keys) }
+  it { is_expected.to define_enum_for(:workload).with_values(described_class.workloads.keys) }
 
   it { is_expected.to validate_presence_of(:name) }
   it { is_expected.to validate_presence_of(:workload) }
