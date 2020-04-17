@@ -5,6 +5,6 @@ Rails.application.routes.draw do
 
   scope module: 'api/v1', path: 'api/v1' do
     resources :projects, only: %i[index]
-  	resources :contributors, only: [:index]
+  	resources :contributors, only: [:index, :update]
   end
 end
