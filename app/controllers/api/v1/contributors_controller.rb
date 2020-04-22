@@ -9,7 +9,7 @@ module Api
 
       def update
         contributor = Contributor.find(params[:id])
-        return render json: contributor, status: :ok if contributor.update(update_params)
+        return render json: contributor if contributor.update(update_params)
 
         render json: { errors: contributor.errors }, status: :bad_request
       end
