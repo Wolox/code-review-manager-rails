@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "id": { "type": "integer" },
+    "name": { "type": "string" },
+    "workload": { "type": "string" },
+    "country": { "type": "string" },
+    "admission_date": { "type": "date" }
+  }
+}

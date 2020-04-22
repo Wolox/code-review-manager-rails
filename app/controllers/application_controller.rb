@@ -7,4 +7,12 @@ class ApplicationController < ActionController::API
     locale = params[:locale] || I18n.default_locale
     I18n.with_locale(locale, &action)
   end
+
+  rescue_from ActiveRecord::RecordNotFound do |error|
+    render json: { errors: error }, status: :bad_request
+  end
+
+  rescue_from ArgumentError do |error|
+    render json: { errors: error }, status: :bad_request
+  end
 end
